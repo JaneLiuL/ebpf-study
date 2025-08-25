@@ -1,10 +1,10 @@
 #![allow(dead_code)]
 
-use aya_bpf::bindings::u32;
-use aya_bpf::macros::map;
-use aya_bpf::maps::{HashMap, PerfEventArray};
-use aya_bpf::programs::ProbeContext;
-use aya_bpf::BpfContext;
+use aya_ebpf::bindings::u32;
+use aya_ebpf::macros::map;
+use aya_ebpf::maps::{HashMap, PerfEventArray};
+use aya_ebpf::programs::ProbeContext;
+use aya_ebpf::BpfContext;
 use core::mem;
 use kernel::prelude::*;
 

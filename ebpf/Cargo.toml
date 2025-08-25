@@ -15,4 +15,3 @@ tokio = { version = "1.0", features = ["full"] }
 chrono = "0.4"
 svg = "0.18.0"
 hashbrown = "0.15.5"
-
