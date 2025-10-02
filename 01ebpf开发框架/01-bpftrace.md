@@ -73,6 +73,10 @@ bpftrace -e 'tracepoint:sched:sched_switch { @[kstack] = count(); }'
 ## 阻塞 I/O跟踪
 bpftrace -e 'tracepoint:block:block_rq_issue { @ = hist(args.bytes); }'
 
+列出内核上所有可用的 Kprobe：
+```
+sudo cat /sys/kernel/debug/tracing/available_filter_functions
+```
 
 ## reference:
 * https://github.com/bpftrace/bpftrace/blob/master/man/adoc/bpftrace.adoc
